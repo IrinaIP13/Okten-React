@@ -8,7 +8,7 @@ type PostProps = {
 export const Post:FC<PostProps> = ({post: {id, title, body }}) => {
     return (
         <div>
-            {id} <b>{title}</b> - {body}
+            <h2>{id}. {title}</h2> <p> "{body}" </p>
         </div>
     );
 };
